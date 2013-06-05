@@ -1,0 +1,1 @@
+if [ -e target/start ]; then target/start -Dhttp.port=$PORT $JAVA_OPTS; else node web.js; fi
