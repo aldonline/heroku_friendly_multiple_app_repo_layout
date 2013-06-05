@@ -6,5 +6,5 @@ Running a Node.js + Play app from the same repo on Heroku
 
 To Update
 
-    $ git push heroku-node
-    $ git push heroku-play
+    $ git push heroku-node master
+    $ git push heroku-play master
