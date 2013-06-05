@@ -1,4 +1,10 @@
-This is your new Play 2.1 application
-=====================================
+Running a Node.js + Play app from the same repo on Heroku
 
-This file will be packaged with your application, when using `play dist`.
+
+    $ heroku create --remote heroku-node --buildpack https://github.com/heroku/heroku-buildpack-nodejs
+    $ heroku create --remote heroku-play --buildpack https://github.com/heroku/heroku-buildpack-scala
+
+To Update
+
+    $ git push heroku-node
+    $ git push heroku-play
