@@ -1,5 +1,13 @@
-Running a Node.js + Play app from the same repo on Heroku
 
+# Problem
+
+How can I run a Node.js + Play app from the same repo on Heroku?
+
+# Solution
+
+Use different buildpacks and a conditional start script
+
+----
 
     $ heroku create --remote heroku-node --buildpack https://github.com/heroku/heroku-buildpack-nodejs
     $ heroku create --remote heroku-play --buildpack https://github.com/heroku/heroku-buildpack-scala
